@@ -1,0 +1,76 @@
+¿Qué	es	Spring	MVC?	
+a) Un	Framework	Java	que	ayuda	al	desarrollo	de	aplicaciones	web	
+b) Biblioteca	JavaScript	para	dejar	a	las	aplicaciones	web	mas	elegantes	
+c) Una	manera	de	integrar	código	java	con	Adobe	Flash	
+d) Una	biblioteca	Java	para	persistencia	de	datos
+Respuesta: a
+¿Porque	necesitamos	configurar	el	filtro	de	Spring	MVC	en	el	web.xml?		
+a) No	es	necesario.	Podemos	ejecutarlo	sin	esas	líneas.	
+b) Es	 apenas	 descriptivo.	 Estamos	 solo	 documentando	 que	 nuestra	
+aplicación	usa	Spring	MVC	
+c) Para	que	todos	los	requests	que	lleguen	a	la	aplicación	sean	recibidos	y	
+tratados	por	Spring	MVC.	
+Respuesta: c
+Abra	 el	 archivo	 spring-context.xml.	 ¿Para	 que	 sirve?.	 ¿O	 que	 esta	
+configurado	ahí?
+Respuesta: Sirve para la configuracion de los beans.Esta configurado los beans de la aplicacion.
+
+1. ¿Cuáles	 son	 los	 motivos	 para	 no	 colocar	 el	 código	 de	 negocio	 Java	 con	 el	
+código	HTML?	
+Son varios, entre estos son:
+-Dejar de seguir el patron MVC.
+-No seguir los estandares de programacion.
+2. En	MVC.	¿En	que	capa	trabaja	Spring?	
+-En todas las capas inyectado sus debidos beans
+Ejemplo: 
+@Controller inyectamos los beans de DAO
+@Repository diciendole que es un bean
+3. ¿Cuándo	un	request	llega	al	servicor,	cual	es	el	orden	de	ejecución	común?	
+Controladora => Modelo => Vista
+
+4. ¿Qué	tecnología	estándar	usa	Spring	MVC	en	la	capa	View?	
+JSP
+5. ¿En	MVC,	la	regla	de	negocio	en	que	capa	es	llamada?
+Modelo
+
+
+¿Cómo	Spring	sabe	que	campo	de	texto	va	para	que	atributo?	
+	
+a) El	orden	de	los	elementos	en	el	HTML	debe	ser	en	el	mismo	orden	de	los	
+atributos	de	la	clase	
+b) El	 “nombre”	 del	input	 en	HTML	 debe	 ser	 el	 nombre	 del	 atributo	 en	la	
+clase.	
+c) Ni	idea		
+
+Respuesta: b
+
+¿Para	que	sirven	los	dos	parámetros	que	el	método	addObject()	recibe?
+a. El	primero	es	el	objeto	a	ser	almacenado,	el	segundo	es	el	nombre	del	
+JSP.	
+b. El	primero	es	el	nombre	del	objeto	en	el	JSP,	y	el	segundo	es	el	propio	
+objeto.	
+c. El	primero	es	el	objeto	a	ser	almacenado,	el	segundo	es	el	tipo	de	objeto	
+d. El	primero	es	el	tipo	de	objeto	a	ser	almacenado,	el	segundo	es	el	propio	
+objeto.
+Respuesta:b
+
+Recuerde	que	usamos	Tags	de	JSTL,	como	c:if	y	c:forEach.	Ellas	son	
+bastantes	útiles	y	bien	comunes	en	el	desarrollo	Java	Web.	¿qué	opina	de	
+ellas?
+Respuesta:Son muy utiles, ademas de que son muy utilizadas en otros proyectos
+
+Revise	este	blog	y	diga	que	es	el	flash	scope	
+Respuesta:
+Debido al problema de versiones pasadas a la version 3.1 de spring,cuando tu querias redireccionar 
+a un controlador mandado atributos no habia forma de hacerlo.
+
+Desde la version 3.1, se puede hacer atraves de el metodo addFlashAttribute. Ejemplo:
+redirectAttrs.addFlashAttribute("AttributeName", value);
+
+
+
+
+
+
+
+
